@@ -6,13 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <FrameLayout
+        android:layout_width="403dp"
+        android:layout_height="77dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/menu_btn"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_userLoginAccount"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/icon_person" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summit Properties"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="132dp" />
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="60dp"
-        android:layout_height="58dp"
-        android:background="@drawable/menu_btn"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:id="@+id/btn_Security"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="Security"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <Button
+        android:id="@+id/btn_emergencyNumbers"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="Emergency Numbers"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <Button
+        android:id="@+id/btn_forums"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="FORUMS"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="550dp" />
+
+    <Button
+        android:id="@+id/btn_generateQRCode"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="Generate QR Code"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <Button
+        android:id="@+id/btn_communityChat"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="Community Chat"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="233dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
