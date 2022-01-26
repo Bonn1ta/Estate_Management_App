@@ -7,6 +7,7 @@
     tools:context=".HomeActivity">
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="403dp"
         android:layout_height="77dp"
         android:layout_centerHorizontal="true"
@@ -22,7 +23,7 @@
             android:id="@+id/btn_menu"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_gravity="left|center_vertical"
+            android:layout_gravity="start|center_vertical"
             android:background="@drawable/menu_btn"
             android:gravity="center" />
 
@@ -30,65 +31,86 @@
             android:id="@+id/btn_userLoginAccount"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_gravity="right|center_vertical"
+            android:layout_gravity="end|center_vertical"
             android:background="@drawable/icon_person" />
 
     </FrameLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txt_headingSummitProperties"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="29dp"
         android:text="Summit Properties"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="42sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <Button
         android:id="@+id/btn_Security"
         android:layout_width="140dp"
         android:layout_height="140dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="50dp"
         android:text="Security"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="390dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_emergencyNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/btn_generateQRCode" />
 
     <Button
         android:id="@+id/btn_emergencyNumbers"
         android:layout_width="140dp"
         android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="17dp"
         android:text="Emergency Numbers"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="390dp" />
+        app:layout_constraintEnd_toStartOf="@+id/btn_Security"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_communityChat" />
 
     <Button
         android:id="@+id/btn_forums"
         android:layout_width="140dp"
         android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="41dp"
         android:text="FORUMS"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="550dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_emergencyNumbers" />
 
     <Button
         android:id="@+id/btn_generateQRCode"
         android:layout_width="140dp"
         android:layout_height="140dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="50dp"
         android:text="Generate QR Code"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_communityChat"
+        app:layout_constraintTop_toBottomOf="@+id/txt_headingSummitProperties" />
 
     <Button
         android:id="@+id/btn_communityChat"
         android:layout_width="140dp"
         android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="45dp"
         android:text="Community Chat"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_headingSummitProperties" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
