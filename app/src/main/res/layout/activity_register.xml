@@ -7,7 +7,7 @@
     tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Summit Properties"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="@+id/view">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txt_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -60,15 +60,13 @@
             android:text="LOGIN"
             android:textColor="@color/white"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:onClick="btnLoginPage"
-            />
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnLogin"
         android:layout_width="180dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="104dp"
         android:background="@color/purple_700"
         android:paddingTop="3dp"
@@ -92,7 +90,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView2">
+        app:layout_constraintTop_toTopOf="@+id/txt_heading">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -104,15 +102,14 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/txt_firstname"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Firstname">
+                    android:layout_height="match_parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_firstName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Surname" />
+                        android:hint="Firstname" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -120,9 +117,12 @@
                     android:layout_height="match_parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_surname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Surname" />
+                        android:hint="Surname"
+                        android:textColorHint="#757575"
+                        />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -130,6 +130,7 @@
                     android:layout_height="match_parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Phone" />
@@ -140,6 +141,7 @@
                     android:layout_height="match_parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Email" />
@@ -150,9 +152,12 @@
                     android:layout_height="match_parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_unitname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Unit Name" />
+                        android:hint="Unit Name"
+                        android:textColorHint="#757575"
+                        android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -160,9 +165,11 @@
                     android:layout_height="match_parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_unitNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Unit Number" />
+                        android:hint="Unit Number"
+                        />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -172,9 +179,12 @@
                     app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Password" />
+                        android:hint="Password"
+
+                        />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -183,9 +193,10 @@
                     app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_rePassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Re-Enter Password" />
+                        android:hint="@string/re_enter_password" />
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
