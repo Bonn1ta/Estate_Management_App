@@ -7,7 +7,7 @@
     tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/txt_heading"
+        android:id="@+id/txt_headingSummitProperties1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
@@ -38,48 +38,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txt_register">
 
-        <TextView
-            android:id="@+id/txt_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:text="@string/txt_register"
-            android:textColor="@color/purple_700"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
         <Button
             android:id="@+id/btnLoginPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:background="@drawable/btn_top"
+            android:onClick="btnLoginPage"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
+            android:text="@string/btnLoginPage"
             android:textColor="@color/white"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:text="@string/btnLoginPage"
-            />
-    </RelativeLayout>
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="180dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="104dp"
-        android:background="@color/purple_700"
-        android:paddingTop="3dp"
-        android:text="@string/btn_register"
-        android:textAlignment="center"
-        android:textColor="#FFF7F7"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/cardView"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        <Button
+            android:id="@+id/btnRegisterPage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="220dp"
+            android:background="@drawable/btn_top"
+            android:onClick="btnRegisterPage"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="REGISTER"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -91,7 +78,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txt_heading">
+        app:layout_constraintTop_toTopOf="@+id/txt_headingSummitProperties1">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -208,11 +195,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/re_enter_password" />
+
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
         </ScrollView>
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:background="@color/purple_700"
+        android:onClick="goToHomePage"
+        android:paddingTop="3dp"
+        android:text="@string/btn_register"
+        android:textAlignment="center"
+        android:textColor="#FFF7F7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

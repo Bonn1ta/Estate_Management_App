@@ -3,6 +3,7 @@ package com.example.summit_properties_app
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,5 +14,14 @@ class LoginActivity : AppCompatActivity() {
     fun btnRegisterPage(view: android.view.View) {
         startActivity(Intent(this,RegisterActivity :: class.java))
         overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
+    }
+
+    fun goToHomePage(view: View?) {
+        startActivity(Intent(this,HomeActivity :: class.java))
+    }
+
+    fun btnLoginPage(view: android.view.View) {
+        startActivity(Intent(this,LoginActivity :: class.java))
+        overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
     }
 }

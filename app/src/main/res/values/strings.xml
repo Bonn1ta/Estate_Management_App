@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Summit_Properties_App</string>
+    <string name="app_name">Summit_Properties</string>
     <string name="txt_firstName">Firstname</string>
     <string name="txt_surname">Lastname</string>
     <string name="txt_phone">Phone</string>
@@ -13,5 +13,11 @@
     <string name="txt_register">REGISTER</string>
     <string name="txt_heading">Summit Properties</string>
     <string name="txt_login">LOGIN</string>
-
+    <string name="txt_headingCommunityInfo">Community Info</string>
+    <string name="txt_headingPropertyManagement">Property Management</string>
+    <string name="txt_headingCommunityManagement">Community Management</string>
+    <string name="txt_headingContractedServiceProviders">Contracted Service Providers</string>
+    <string name="txt_headingImportantContacts">Important Contacts</string>
+    <string name="txt_headingSummitProperties">Summit Properties</string>
+    <string name="txt_headingSummitProperties1">Summit Properties</string>
 </resources>
