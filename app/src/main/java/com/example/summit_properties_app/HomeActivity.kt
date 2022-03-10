@@ -22,7 +22,4 @@ class HomeActivity : AppCompatActivity() {
         startActivity(Intent(this@HomeActivity, ContactInfoActivity::class.java))
     }
 
-
-
-
 }

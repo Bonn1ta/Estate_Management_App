@@ -10,5 +10,7 @@ class ContactInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contact_info)
     }
-
+    var propertyManagementContacts = arrayOf("Amelia Chamberlain", "Jason Vaughan", "Jamal Rankin")
+    var communityManagementContacts = arrayOf("Eliott Stewart", "Sofie Flynn", "Hassan Salas", "Alayna Griffith", "Jazmine Rooney")
+    var importantContact = arrayOf("Thomas White", "Cyrus Rooney", "Corey Stuart")
 }
