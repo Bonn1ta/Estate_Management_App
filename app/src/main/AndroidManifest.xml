@@ -9,6 +9,18 @@
         android:roundIcon="@mipmap/summit_properties_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Summit_Properties_App">
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".BaseActivity"
             android:exported="false" />
@@ -31,11 +43,7 @@
             android:name=".LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
