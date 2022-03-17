@@ -1,9 +1,8 @@
-package com.example.summit_properties_app
+package com.example.summit_properties_app.activities
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import com.example.summit_properties_app.R
 
 class ContactInfoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
