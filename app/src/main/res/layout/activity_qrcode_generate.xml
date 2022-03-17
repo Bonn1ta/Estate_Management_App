@@ -15,13 +15,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <Button
         android:id="@+id/btn_generateQRCode"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="236dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/btn_black_boarder"
         android:onClick="btnGenerateQRCode"
@@ -30,6 +29,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imvQRCode"
         tools:text="Generate QR Code" />
+
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_black_boarder"
+        android:onClick="btnShareQRCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvQRCode"
+        tools:text="SHARE" />
 
     <TextView
         android:id="@+id/txtEnterVisitorName"

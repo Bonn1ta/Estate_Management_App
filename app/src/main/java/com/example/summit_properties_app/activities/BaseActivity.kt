@@ -1,10 +1,11 @@
-package com.example.summit_properties_app.activities
+package com.example.summit_properties_app
 
 import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.EditText
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import com.example.summit_properties_app.R
 import com.google.android.material.snackbar.Snackbar
 
 open class BaseActivity : AppCompatActivity() {

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/summit_properties_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Summit_Properties_App">
+
         <activity
             android:name=".activities.ForgotPasswordActivity"
             android:exported="false" />
@@ -34,6 +35,7 @@
             android:name=".activities.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,5 +43,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>
