@@ -16,8 +16,6 @@ class LoginActivity : AppCompatActivity() {
         //database.setValue()
     }
 
-
-
     fun goToHomePage(view: View?) {
         startActivity(Intent(this,HomeActivity :: class.java))
     }
@@ -31,6 +29,4 @@ class LoginActivity : AppCompatActivity() {
         startActivity(Intent(this,RegisterActivity :: class.java))
         overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
     }
-
-
 }

@@ -20,14 +20,14 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
-        val navView : NavigationView = findViewById(R.id.nav_view)
+       // val drawerLayout : DrawerLayout = findViewById(R.id.drawerLayout)
+      //  val navView : NavigationView = findViewById(R.id.nav_view)
 
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
+      //  toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
+      //  drawerLayout.addDrawerListener(toggle)
+     //   toggle.syncState()
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+     //   supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
     }
 
