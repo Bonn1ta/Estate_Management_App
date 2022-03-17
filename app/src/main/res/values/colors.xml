@@ -17,4 +17,5 @@
     <color name="lightGreyWindows">#27000000</color>
     <color name="Red">#F72400</color>
     <color name="Green">#8BC34A</color>
+    <color name="underline">#BDB8B8</color>
 </resources>

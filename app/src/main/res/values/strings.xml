@@ -20,4 +20,6 @@
     <string name="txt_headingImportantContacts">Important Contacts</string>
     <string name="txt_headingSummitProperties">Summit Properties</string>
     <string name="txt_headingSummitProperties1">Summit Properties</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

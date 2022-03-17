@@ -1,11 +1,16 @@
 package com.example.summit_properties_app
 
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
+import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
 
 open class BaseActivity : AppCompatActivity() {
+
+    private  lateinit var mProgressDialog: Dialog
 
     fun showErrorSnackBar(message: String, errorMessage: Boolean){
         val snackBar =
@@ -28,5 +33,18 @@ open class BaseActivity : AppCompatActivity() {
             )
         }
         snackBar.show()
+    }
+
+    fun showProgressDialog(text:String){
+        mProgressDialog = Dialog(this)
+        mProgressDialog.setContentView(R.layout.dialog_progress)
+        mProgressDialog.findViewById<TextView>(R.id.lbl_progress).text = text
+        mProgressDialog.setCancelable(false)
+        mProgressDialog.setCanceledOnTouchOutside(false)
+        mProgressDialog.show()
+    }
+
+    fun dismissProressDialog(){
+        mProgressDialog.dismiss()
     }
 }

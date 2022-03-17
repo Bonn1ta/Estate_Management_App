@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
 import android.widget.EditText
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.auth.AuthResult
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class RegisterActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +27,7 @@ class RegisterActivity : BaseActivity() {
     }
 
     fun registerClick(view: View?) {
-        validateRegisterDetails()
+        registerUser()
     }
 
     private fun validateRegisterDetails(): Boolean{
@@ -70,9 +74,36 @@ class RegisterActivity : BaseActivity() {
                 false
             }
             else -> {
-                showErrorSnackBar("You have been registered", false)
+               // showErrorSnackBar("You have been registered", false)
                 true
             }
         }
     }
+
+   private fun registerUser(){
+
+       if (validateRegisterDetails()){
+
+           showProgressDialog("In Progress")
+
+           val email: String = findViewById<EditText>(R.id.txt_email).text.toString().trim {it <= ' '}
+           val password: String = findViewById<EditText>(R.id.txt_password).text.toString().trim {it <= ' '}
+
+           FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+               .addOnCompleteListener(
+                   OnCompleteListener<AuthResult> {  task ->
+                       dismissProressDialog()
+                    if (task.isSuccessful){
+                        val firebaseUser: FirebaseUser = task.result!!.user!!
+
+                        showErrorSnackBar("You have successfully registered", false)
+                    }
+                    else{
+                        showErrorSnackBar(task.exception!!.message.toString(), true)
+                    }
+                   }
+               )
+       }
+
+   }
 }
