@@ -10,25 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Summit_Properties_App">
         <activity
-            android:name=".BaseActivity"
+            android:name=".activities.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".QRCodeGenerateActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ContactInfoActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".HomeActivity"
+            android:name=".activities.BaseActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.QRCodeGenerateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ContactInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
